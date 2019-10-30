@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--<Compiled and minified CSS> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
   <link type="text/css" rel="stylesheet"
         href="vendor/materialize/dist/css/materialize.min.css"
@@ -21,66 +23,81 @@
   <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>APP DE SERVIÇOS</title>
 </head>
+    <body>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">QUALIFICAÇÃO</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Pagina Inicial</a></li>
+          </ul>
+        </div>
+      </nav>
 
-<body>
+      <h1 class="title mt-6" >Defina sua(s) área(s) de atuação</h1>
 
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">QUALIFICAÇÃO</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Pagina Inicial</a></li>
-
-      </ul>
-    </div>
-  </nav>
-
-
-  <div>
-      <div id="select">
-        <select multiple id="areasAtuacao">
-             <option value="" disabled selected>Defina sua área de atuação</option>
-          <option value="Eletrica">Elétrica</option>
-          <option value="Hidraulica">Hidraúlica</option>
-          <option value="Construcao Civil">Construção Civil</option>
-        </select>
-    </div>
-  </div>
-
-
-  <button id="btEnviarQuali" class="btn waves-effect waves-light" type="submit" name="action" >
-    Envia
-    <i class="material-icons right">send</i>
-  </button>
-
-          <footer class="page-footer" id="ft">
-            <div style="text-align: right">
-              <div class="footer-copyright">
-                <div class="container">
-                  By: Ederson Cascaes
-                </div>
-              </div>
+            <div class="qualificacao  mt-6" >
+              <form action="#">
+                   <p>
+                     <label>
+                       <input type="checkbox" class="filled-in" value="eletricaRes"/>
+                       <span>Elétrica Residencial</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input type="checkbox" class="filled-in"  />
+                       <span>Elétrica Automotiva</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input type="checkbox" class="filled-in"  />
+                       <span>Hidráulica</span>
+                     </label>
+                   </p>
+                  <p>
+                     <label>
+                       <input type="checkbox" class="filled-in"  />
+                       <span>Construção Civil</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input type="checkbox" class="filled-in"  />
+                       <span>Refrigereção</span>
+                     </label>
+                   </p>
+                  <p>
+                     <label>
+                       <input type="checkbox" class="icheckbox  filled-in"  />
+                       <span>Eletrônica</span>
+                     </label>
+                   </p>                
+                 </form>
             </div>
-          </footer>
-
-          <script type="text/javascript">//<![CDATA[
-          window.onload=function(){
-          $(document).ready(function() {
-              $('select').material_select();
-          });
-          }//]]>
-
-          </script>
 
 
-          <!--JavaScript at end of body for optimized loading-->
-              <script type="text/javascript" src="js/qualificacao.js"></script>
-              <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
-              <script type="text/javascript" src="vendor/materialize/dist/js/materialize.min.js"></script>
-          <!--    <script type="text/javascript" src="cordova.js"></script> -->
-              <script type="text/javascript" src="js/requests.js"></script>
+      <button id="btEnviarQuali" class="btn waves-effect waves-light mt-6" type="submit" name="action"  >
+        Envia
+        <i class="material-icons right">send</i>
+      </button>
 
+              <footer class="page-footer" id="ft">
+                <div style="text-align: right">
+                  <div class="footer-copyright">
+                    <div class="container">
+                      By: Ederson Cascaes
+                    </div>
+                  </div>
+                </div>
+              </footer>
+    <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/qualificacao.js"></script>
+        <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="vendor/materialize/dist/js/materialize.min.js"></script>
+    <!--    <script type="text/javascript" src="cordova.js"></script> -->
+        <script type="text/javascript" src="js/requests.js"></script>
 
-</body>
-
+    </body>
 </html>
