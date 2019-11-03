@@ -62,16 +62,20 @@ $(document).ready(function(){
   $(document).on('click', '#btEnviar2', function(){
     post('usuario', Requisicao)
     .then(function (retorno) {
-      storage.clear();
 
-      if(retorno === true){
-        location.href = 'cadConcluido.html';
-        alert("Cadastro feito com sucesso !!")
-        location.href = 'qualificcao.html';
+      if(retorno > 0){
+        localStorage.setItem("idCadastro", retorno);
+        alert("Cadastro realizado com sucesso !!")
       }else{
         alert("Erro na Conclusão do cadastro !!")
         location.href = 'cadConcluido.html';
-      }
+      }          
+      // localStorage.removeItem('endereco');
+      // localStorage.removeItem('dadosPessoais');
+      // localStorage.removeItem('usuario');
+         location.href = 'qualificacao.html';
     });
+
   });
+
 });

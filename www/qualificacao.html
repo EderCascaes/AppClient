@@ -26,54 +26,77 @@
     <body>
       <nav>
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">QUALIFICAÇÃO</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a href="#" class="brand-logo">CONCLUIR CADASTRO</a>
+          <a href="#" data-activates="menu-mobile" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Pagina Inicial</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cadastro2.html">Cadastro de dados</a></li>
+            <li><a href="cadastro3.html">Endereço</a></li>
+          </ul>
+          <ul class="side-nav" id="menu-mobile">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cadastro2.html">Cadastro de dados</a></li>
+            <li><a href="cadastro3.html">Endereço</a></li>
           </ul>
         </div>
       </nav>
 
+
       <h1 class="title mt-6" >Defina sua(s) área(s) de atuação</h1>
 
+
             <div class="qualificacao  mt-6" >
-              <form action="#">
+              <form action="" method="">
                    <p>
                      <label>
-                       <input type="checkbox" class="filled-in" value="eletricaRes"/>
+                       <input type="checkbox" class="filled-in" name="qualificacao[]" id="1" value="1"/>
                        <span>Elétrica Residencial</span>
                      </label>
                    </p>
                    <p>
                      <label>
-                       <input type="checkbox" class="filled-in"  />
+                       <input type="checkbox" class="filled-in" name="qualificacao[]" id="2" value="2"/>
+                       <span>Hidráulica</span>
+                     </label>
+                   </p>
+                   <p>
+                     <label>
+                       <input type="checkbox" class="filled-in" name="qualificacao[]" id="3" value="3"/>
+                       <span>Construção Civil</span>
+                     </label>
+                   </p>
+                  <p>
+                     <label>
+                       <input type="checkbox" class="filled-in" name="qualificacao[]" id="4" value="4"/>
                        <span>Elétrica Automotiva</span>
                      </label>
                    </p>
                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" name="qualificacao[]" id="5" value="5"/>
+                        <span>Mecânica Automotiva</span>
+                      </label>
+                    </p>
+                   <p>
                      <label>
-                       <input type="checkbox" class="filled-in"  />
-                       <span>Hidráulica</span>
-                     </label>
-                   </p>
-                  <p>
-                     <label>
-                       <input type="checkbox" class="filled-in"  />
-                       <span>Construção Civil</span>
+                       <input type="checkbox" class="filled-in" name="qualificacao[]" id="6" value="6" />
+                       <span>Refrigereção</span>
                      </label>
                    </p>
                    <p>
                      <label>
-                       <input type="checkbox" class="filled-in"  />
-                       <span>Refrigereção</span>
+                       <input type="checkbox" class="filled-in" name="qualificacao[]" id="7" value="7" />
+                       <span>Manicure</span>
                      </label>
                    </p>
                   <p>
                      <label>
-                       <input type="checkbox" class="icheckbox  filled-in"  />
+                       <input type="checkbox" class="filled-in" name="qualificacao[]" id="8" value="8"/>
                        <span>Eletrônica</span>
                      </label>
-                   </p>                
+                   </p>
                  </form>
             </div>
 
