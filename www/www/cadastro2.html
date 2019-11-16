@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet"
+  href="vendor/materialize/dist/css/materialize.min.css" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet"
+  href="vendor/materialize/dist/css/materialize.min.css"
+  media="screen,projection" />
+
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>APP DE SERVIÇOS</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">CADASTRO</a>
+      <a href="#" data-activates="menu-mobile" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+      <ul class="side-nav" id="menu-mobile">
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row" >
+    <form class="col s12" id="formulario">
+        <div class="input-field col s6">
+          <input placeholder="Digite seu nome completo" id="name" type="text" class="validate">
+          <label for="Digite seu nome completo">Nome :</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="digite seu C P F :" id="cpf" type="text" class="validate">
+          <label for="C P F">C P F :</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input placeholder="Digite o numero do seu Telefone:" id="fone" type="text" class="validate">
+          <label for="Telefone">Telefone :</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input  id="dataNascimento" type="date" class="validate">
+          <!--<label for="Data Nascimento">Data Nascimento :</label>-->
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Digite seu e-mail" id="email" type="text" class="validate">
+          <label for="e-mail">email :</label>
+      </div>
+    </form>
+  </div>
+  <button id="btEnviar2" class="btn waves-effect waves-light" type="submit" name="action" >
+    Envia
+    <i class="material-icons right">send</i>
+  </button>
+
+    <footer class="page-footer" id="ft">
+      <div class="footer-copyright">
+        <div class="container">
+          By Ederson Cascaes
+        </div>
+      </div>
+    </footer>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="vendor/materialize/dist/js/materialize.min.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/requests.js"></script>
+  <script type="text/javascript" src="js/cadastro2.js"></script>
+</body>
+
+</html>
